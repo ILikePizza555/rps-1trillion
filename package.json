@@ -16,6 +16,7 @@
 		"react-markdown": "^9.0.0"
 	},
 	"devDependencies": {
+		"@tailwindcss/typography": "^0.5.10",
 		"@types/node": "^20",
 		"@types/react": "^18",
 		"@types/react-dom": "^18",
@@ -32,7 +33,17 @@
 		],
 		"rules": {
 			"@typescript-eslint/object-curly-spacing": "off",
-			"n/file-extension-in-import": 0
+			"n/file-extension-in-import": 0,
+			"import/extensions": 0,
+			"unicorn/filename-case": [
+				"error",
+				{
+					"cases": {
+						"kebabCase": true,
+						"pascalCase": true
+					}
+				}
+			]
 		}
 	}
 }
