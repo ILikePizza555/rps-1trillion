@@ -27,8 +27,12 @@
 		"xo": "^0.56.0"
 	},
 	"xo": {
+		"ignores": [
+			"next.config.js"
+		],
 		"rules": {
-			"@typescript-eslint/object-curly-spacing": "off"
+			"@typescript-eslint/object-curly-spacing": "off",
+			"n/file-extension-in-import": 0
 		}
 	}
 }

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 import './globals.css';
-import { UserProvider } from '@auth0/nextjs-auth0/client.js';
 
+// eslint-disable-next-line new-cap -- Can't change a third-party library
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
