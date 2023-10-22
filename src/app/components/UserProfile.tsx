@@ -5,7 +5,10 @@ export default function UserProfile() {
 	const { user, error, isLoading } = useUser();
 
 	if (isLoading) {
-		return <div>Loading<span className='loading loading-dots'></span></div>;
+		return <>
+			<span>Loading</span>
+			<span className='loading loading-dots'></span>
+		</>;
 	}
 
 	if (error) {
@@ -13,9 +16,10 @@ export default function UserProfile() {
 	}
 
 	if (user) {
-		return <div>
-		Welcome {user.name}! <a href='/api/auth/logout'>Logout</a>
-		</div>;
+		return <>
+			<p>Welcome <b>{user.name}</b>!</p>
+			<a className='btn btn-primary mt-4' href='/api/auth/logout'>Logout</a>
+		</>;
 	}
 
 	return <a className='btn btn-primary' href='/api/auth/login'>Login</a>;

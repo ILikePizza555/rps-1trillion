@@ -1,5 +1,6 @@
 import Markdown from 'react-markdown';
 import UserProfile from './components/UserProfile';
+import Game from './components/Game';
 
 const welcomeContent = `
 # 🪨📄✂️: 1 Trillion
@@ -25,5 +26,6 @@ export default function Home() {
 			<h2 className='text-2xl mt-8 mb-4 font-bold leading-snug'>User Profile</h2>
 			<UserProfile />
 		</section>
+		<Game />
 	</div>;
 }

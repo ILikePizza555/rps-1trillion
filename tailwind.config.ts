@@ -8,7 +8,12 @@ const config: Config = {
 		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
-	theme: {},
+	daisyui: {
+		themes: ['light'],
+	},
+	safelist: [
+		{pattern: /(bg|border)-(blue|sky|orange|red)-(100|200|300|400|500)/},
+	],
 	plugins: [
 		typographyPlugin,
 		daisyUi,
