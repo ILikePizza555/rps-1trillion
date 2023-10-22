@@ -5,7 +5,7 @@ export default function UserProfile() {
 	const { user, error, isLoading } = useUser();
 
 	if (isLoading) {
-		return <div>Loading...</div>;
+		return <div>Loading<span className='loading loading-dots'></span></div>;
 	}
 
 	if (error) {
@@ -18,5 +18,5 @@ export default function UserProfile() {
 		</div>;
 	}
 
-	return <a href='/api/auth/login'>Login</a>;
+	return <a className='btn btn-primary' href='/api/auth/login'>Login</a>;
 }
