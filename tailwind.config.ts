@@ -11,9 +11,6 @@ const config: Config = {
 	daisyui: {
 		themes: ['light'],
 	},
-	safelist: [
-		{pattern: /(bg|border)-(blue|sky|orange|red)-(100|200|300|400|500)/},
-	],
 	plugins: [
 		typographyPlugin,
 		daisyUi,
