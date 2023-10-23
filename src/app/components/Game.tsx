@@ -9,15 +9,19 @@ const GameButton = ({color, children, onClick}: {color: string; children: React.
 		{children}
 	</button>;
 
+const GameButtons = () => <div className='flex justify-around'>
+	<GameButton color='sky'>🪨</GameButton>
+	<GameButton color='orange'>📄</GameButton>
+	<GameButton color='red'>✂️</GameButton>
+</div>;
+
 export default function Game() {
 	const { user } = useUser();
 
 	if (user) {
 		return <>
 			<h2>Game</h2>
-			<GameButton color='sky'>🪨</GameButton>
-			<GameButton color='orange'>📄</GameButton>
-			<GameButton color='red'>✂️</GameButton>
+			<GameButtons />
 		</>;
 	}
 
