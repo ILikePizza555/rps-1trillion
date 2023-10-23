@@ -5,5 +5,17 @@
 @layer components {
     .game-card {
         @apply border-2 border-solid rounded-xl w-32 h-52 text-8xl text-center shadow-md transition-transform ease-in-out hover:scale-105 active:scale-95;
+
+        &.rock {
+            @apply border-sky-500 bg-sky-100;
+        }
+
+        &.paper {
+            @apply border-orange-500 bg-orange-100;
+        }
+
+        &.scissors {
+            @apply border-red-500 bg-red-100;
+        }
     }
 }

@@ -10,9 +10,9 @@ const GameButton = ({color, children, onClick}: {color: string; children: React.
 	</button>;
 
 const GameButtons = () => <div className='flex justify-around py-5'>
-	<button className='game-card border-sky-500 bg-sky-100'>🪨</button>
-	<button className='game-card border-orange-500 bg-orange-100'>📄</button>
-	<button className='game-card border-red-500 bg-red-100'>✂️</button>
+	<button className='game-card rock'>🪨</button>
+	<button className='game-card paper'>📄</button>
+	<button className='game-card scissors'>✂️</button>
 </div>;
 
 export default function Game() {
